@@ -1,20 +1,37 @@
+# PHP
+/vendor/
+/composer.lock
 
-###> symfony/framework-bundle ###
-/.env.local
+# Symfony
+/var/
+/*.env.local
 /.env.local.php
 /.env.*.local
-/config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
-/var/
-/vendor/
-###< symfony/framework-bundle ###
+/config/secrets/
+/config/jwt/
+.cache/
 
-###> phpunit/phpunit ###
-/phpunit.xml
-/.phpunit.cache/
-###< phpunit/phpunit ###
+# Node.js (если есть фронтенд)
+node_modules/
 
-###> symfony/asset-mapper ###
-/public/assets/
-/assets/vendor/
-###< symfony/asset-mapper ###
+# Logs
+/logs/
+/*.log
+
+# Docker
+/.docker/
+docker-compose.override.yml
+
+# IDEs and Editors
+/.idea/
+/.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Symfony Cache
+/var/cache/
+
+# .env files (don't commit sensitive files)
+.env.*
